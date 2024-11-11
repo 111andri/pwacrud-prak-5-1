@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stsudentyle.css">
+    <title>Manajemen Data Mahasiswa</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Data Mahasiswa</h1>
+        <div class="form-container">
+            <div class="form-section">
+                <h2>Tambah Data Mahasiswa</h2><br>
+                <form id="studentForm">
+                    <input type="text" id="nim" name="nim" required placeholder="NIM">
+                    <input type="text" id="name" name="name" required placeholder="Nama">
+                    <textarea id="alamat" name="alamat" required placeholder="Alamat"></textarea>
+                    <input type="text" id="asalSLTA" name="asalSLTA" required placeholder="Asal SLTA">
+                    <input type="text" id="programStudi" name="programStudi" required placeholder="Program Studi">
+                    <button type="submit">Tambah Mahasiswa</button>
+                </form>
+            </div>
+
+            <div class="form-section">
+                <h2>Hapus Data Mahasiswa</h2><br>
+                <form id="deleteFormStudent">
+                    <input type="number" id="deleteIdStudent" name="deleteIdStudent" required
+                        placeholder="Masukkan ID untuk dihapus">
+                    <button type="submit">Hapus Data</button>
+                </form>
+            </div>
+        </div>
+    </div><br><br>
+
+    <div class="containertable">
+        <h2>Data Mahasiswa</h2>
+        <button id="showStudentData">Tampilkan Data Mahasiswa</button><br><br>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>NIM</th>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>Asal SLTA</th>
+                    <th>Program Studi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan ditampilkan di sini -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Form Update Data (Single Form) -->
+    <div class="update-container">
+        <h2 class="update-title">Update Data Mahasiswa</h2>
+        <form id="updateFormStudent" class="update-form">
+            <div class="form-group">
+                <label for="updateId">ID Mahasiswa</label>
+                <input type="number" id="updateId" required placeholder="Masukkan ID Mahasiswa">
+            </div>
+
+            <div class="form-group">
+                <label for="updateNim">NIM</label>
+                <input type="text" id="updateNim" required placeholder="Masukkan NIM">
+            </div>
+
+            <div class="form-group">
+                <label for="updateName">Nama Lengkap</label>
+                <input type="text" id="updateName" required placeholder="Masukkan Nama Lengkap">
+            </div>
+
+            <div class="form-group">
+                <label for="updateAlamat">Alamat</label>
+                <textarea id="updateAlamat" required placeholder="Masukkan Alamat" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="updateAsalSLTA">Asal SLTA</label>
+                <input type="text" id="updateAsalSLTA" required placeholder="Masukkan Asal SLTA">
+            </div>
+
+            <div class="form-group">
+                <label for="updateProgramStudi">Program Studi</label>
+                <input type="text" id="updateProgramStudi" required placeholder="Masukkan Program Studi">
+            </div>
+
+
+            <button type="submit">Update Data</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../db.js"></script>
+</body>
+
+</html>

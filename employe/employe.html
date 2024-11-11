@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="employestyle.css">
+    <title>Manajemen Data Karyawan</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Data Karyawan</h1>
+        <div class="form-container">
+            <div class="form-section">
+                <h2>Tambah Data Karyawan</h2><br>
+                <form id="employeForm">
+                    <input type="text" id="nik" name="nik" required placeholder="NIK">
+                    <input type="text" id="name" name="name" required placeholder="Nama">
+                    <input type="text" id="tempatLahir" name="tempatLahir" required placeholder="Tempat Lahir">
+                    <input type="text" id="statusKeluarga" name="statusKeluarga" required placeholder="Status Keluarga">
+                    <input type="number" id="jmlhAnak" name="jmlhAnak" required placeholder="Jumlah Anak">
+                    <textarea id="alamat" name="alamat" required placeholder="Alamat"></textarea>
+                    <button type="submit">Tambah Karyawan</button>
+                </form>
+            </div>
+
+            <div class="form-section">
+                <h2>Hapus Data Karyawan</h2><br>
+                <form id="deleteForm">
+                    <input type="number" id="deleteId" name="deleteId" required placeholder="Masukkan ID untuk dihapus">
+                    <button type="submit">Hapus Data</button>
+                </form>
+            </div>
+        </div>
+    </div><br><br>
+
+    <div class="containertable">
+        <h2>Data Karyawan</h2>
+        <button id="showEmployeData">Tampilkan Data Karyawan</button><br><br>
+        <table id="employeTable">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>NIK</th>
+                    <th>Nama</th>
+                    <th>Tempat Lahir</th>
+                    <th>Status Keluarga</th>
+                    <th>Jumlah Anak</th>
+                    <th>Alamat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan ditampilkan di sini -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Form Update Data (Single Form) -->
+    <div class="update-container">
+        <h2 class="update-title">Update Data Karyawan</h2>
+        <form id="updateForm" class="update-form">
+            <div class="form-group">
+                <label for="updateId">ID Karyawan</label>
+                <input type="number" id="updateId" required placeholder="Masukkan ID Karyawan">
+            </div>
+
+            <div class="form-group">
+                <label for="updateNik">NIK</label>
+                <input type="text" id="updateNik" required placeholder="Masukkan NIK">
+            </div>
+
+            <div class="form-group">
+                <label for="updateName">Nama Lengkap</label>
+                <input type="text" id="updateName" required placeholder="Masukkan Nama Lengkap">
+            </div>
+
+            <div class="form-group">
+                <label for="updateTempatLahir">Tempat Lahir</label>
+                <input type="text" id="updateTempatLahir" required placeholder="Masukkan Tempat Lahir">
+            </div>
+
+            <div class="form-group">
+                <label for="updateStatusKeluarga">Status Keluarga</label>
+                <input type="text" id="updateStatusKeluarga" required placeholder="Masukkan Status Keluarga">
+            </div>
+
+            <div class="form-group">
+                <label for="updateJmlhAnak">Jumlah Anak</label>
+                <input type="number" id="updateJmlhAnak" required placeholder="Masukkan Jumlah Anak">
+            </div>
+
+            <div class="form-group">
+                <label for="updateAlamat">Alamat</label>
+                <textarea id="updateAlamat" required placeholder="Masukkan Alamat" rows="3"></textarea>
+            </div>
+
+            <button type="submit">Update Data</button>
+        </form><br><br><br>
+
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../db.js"></script>
+</body>
+
+</html>

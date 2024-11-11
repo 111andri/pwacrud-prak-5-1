@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="roomstyle.css">
+    <title>Manajemen Data Ruangan</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Data Ruangan</h1>
+        <div class="form-container">
+            <div class="form-section">
+                <h2>Tambah Data Ruangan</h2><br>
+                <form id="roomForm">
+                    <input type="text" id="kodeRuangan" name="kodeRuangan" required placeholder="Kode Ruangan">
+                    <input type="text" id="fasilitas" name="fasilitas" required placeholder="Fasilitas">
+                    <input type="number" id="dayaTampung" name="dayaTampung" required placeholder="Daya Tampung">
+                    <input type="text" id="gedung" name="gedung" required placeholder="Gedung">
+                    <button type="submit">Tambah Ruangan</button>
+                </form>
+            </div>
+
+            <div class="form-section">
+                <h2>Hapus Data Ruangan</h2><br>
+                <form id="deleteFormRoom">
+                    <input type="number" id="deleteIdRoom" name="deleteIdRoom" required
+                        placeholder="Masukkan ID untuk dihapus">
+                    <button type="submit">Hapus Data</button>
+                </form>
+            </div>
+        </div>
+    </div><br><br>
+
+    <div class="containertable">
+        <h2>Data Ruangan</h2>
+        <button id="showRoomData">Tampilkan Data Ruangan</button><br><br>
+        <table id="roomTable">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Kode Ruangan</th>
+                    <th>Fasilitas</th>
+                    <th>Daya Tampung</th>
+                    <th>Gedung</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan ditampilkan di sini -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Form Update Data (Single Form) -->
+    <div class="update-container">
+        <h2 class="update-title">Update Data Ruangan</h2>
+        <form id="updateFormRoom" class="update-form">
+            <div class="form-group">
+                <label for="updateId">ID Ruangan</label>
+                <input type="number" id="updateId" required placeholder="Masukkan ID Ruangan">
+            </div>
+
+            <div class="form-group">
+                <label for="updateKodeRuangan">Kode Ruangan</label>
+                <input type="text" id="updateKodeRuangan" required placeholder="Masukkan Kode Ruangan">
+            </div>
+
+            <div class="form-group">
+                <label for="updateFasilitas">Fasilitas</label>
+                <input type="text" id="updateFasilitas" required placeholder="Masukkan Fasilitas">
+            </div>
+
+            <div class="form-group">
+                <label for="updateDayaTampung">Daya Tampung</label>
+                <input type="number" id="updateDayaTampung" required placeholder="Masukkan Daya Tampung">
+            </div>
+
+            <div class="form-group">
+                <label for="updateGedung">Gedung</label>
+                <input type="text" id="updateGedung" required placeholder="Masukkan Gedung">
+            </div>
+
+            <button type="submit">Update Data</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../db.js"></script>
+</body>
+
+</html>

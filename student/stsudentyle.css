@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(14, 182, 224, 0.367);
+}
+
+.container {
+    max-width: 1000px;
+    background-color: white;
+    margin: 1% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container h1 {
+    text-align: center;
+    padding: 5%;
+}
+
+form {
+    width: 90%;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    height: 20px;
+    border-radius: 2px;
+    border-color: rgba(93, 95, 96, 0.827);
+    border-style: solid;
+    padding: 5px;
+}
+
+.container button {
+    padding: 10px;
+    background-color: rgb(34, 98, 226);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.container button:hover {
+    cursor: pointer;
+    background-color: rgb(4, 46, 145);
+}
+
+/* data employe and student style */
+
+.containertable {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.containertable button {
+    padding: 10px;
+    background-color: rgb(34, 98, 226);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.containertable button:hover {
+    cursor: pointer;
+    background-color: rgb(4, 46, 145);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #1370c1;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Form container styles */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    width: 48%;
+}
+
+#employeForm,
+#deleteForm,
+#studentForm,
+#deleteFormStudent {
+    display: flex;
+    flex-direction: column;
+}
+
+#employeForm input,
+#employeForm textarea,
+#deleteForm input,
+#studentForm input,
+#studentForm textarea,
+#deleteFormStudent input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#employeForm button,
+#deleteForm button,
+#studentForm button,
+#deleteFormStudent button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+#employeForm button,
+#studentForm button {
+    background-color: rgb(34, 98, 226);
+}
+
+#deleteForm button,
+#deleteFormStudent button {
+    background-color: rgb(34, 98, 226);
+}
+
+#employeForm button:hover,
+#studentForm button:hover {
+    background-color: rgba(34, 98, 226, 0.79);
+}
+
+#deleteForm button:hover,
+#deleteFormStudent button:hover {
+    background-color: rgba(34, 98, 226, 0.775);
+}
+
+/* CSS for update forms */
+.update-container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.update-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.update-form {
+    display: grid;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.update-form input,
+.update-form textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.update-form input:focus,
+.update-form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.update-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.update-form button:hover {
+    background-color: #2980b9;
+}
+
+.form-group {
+    display: grid;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #34495e;
+}
